@@ -9,6 +9,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN groupadd -g 9999 folder && \
     useradd -r -b /home -u 9999 -g folder folder
 
+RUN echo "root:VMware1!" | chpasswd
+
 RUN mkdir /home/folder && chown folder:folder /home/folder && chmod 700 /home/folder
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
