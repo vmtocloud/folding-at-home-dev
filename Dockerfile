@@ -31,4 +31,4 @@ USER folder
 WORKDIR /home/folder
 
 ENTRYPOINT ["FAHClient", "--web-allow=0/0:7396", "--allow=0/0:7396"]
-CMD ["--user=VMwareContainer", "--team=52737", "--gpu=false", "--smp=true", "--power=full"]
+CMD ["--user=VMware-Container", "--team=52737", "--gpu=false", "--smp=true", "--power=full"]
